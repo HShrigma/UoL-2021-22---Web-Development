@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Contains all information about the page-->
+    <title>SUFGC | Advanced</title>
+
+    <!-- contains references to css-->
+    <link rel="stylesheet" href="../style_sheets/styles.css">
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Sofia University Fighting Game Club, official website, Advanced">
+    <meta name="keywords"
+        content="SU, SUFGC, Street, Fighter, FGC, Street Fighter, Fighting Games, Fighting Games club">
+    <meta name="author" content="Hristo Stantchev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- header section + navigational bar: Universal to site-->
+    <header>
+        <h1 id="main_header"> SUFGC</h1>
+        <h2 id="mini_header"> Sofia University Fighting Game Club</h2>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="basics.html">Basics</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a id="active_element" href="advanced.html">Advanced</a></li>
+        </ul>
+
+    </nav>
+    <!--Title and Introduction-->
+    <section>
+        <article>
+            <h2 id="page_title">Advanced</h2>
+            <p id="page_sub">Here you can find information on advanced mechanics in fighting games.<br>Some examples are
+                Street
+                Fighter 5 specific but all skills here are relevant
+                to other titles.<br>Once you grasp these abilities you can consider yourself and intermediate fighting
+                game player.</p>
+        </article>
+    </section>
+    <div>
+        <!--Special Moves-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Special Moves</h3>
+            </div>
+            <div class="image">
+                <iframe alt="special moves video" width="852" height="480"
+                    src="https://www.youtube.com/embed/u9ZsO2ph6I0" title="Street Fighter V - Cammy Move List"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text long">
+                <p>Every character has special moves requiring more complex inputs than just pressing an attack
+                    button. We will use Cammy as our example character here. Her inputs are motion-based - making shapes
+                    with the directional buttons.
+                    Aim for being comfortable with doing Your character's special moves 10 times in a row on each
+                    side. It
+                    will always be hard at first but if you stay consistent it will quicklly become second nature.</p>
+            </div>
+        </div>
+        <!--Combos-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Combos</h3>
+            </div>
+            <div class="image">
+                <iframe alt="combos video" width="852" height="480" src="https://www.youtube.com/embed/mxTU7KzhMAw"
+                    title="SFV - Cammy's Bread & Butter! - The Essential Combos" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text long">
+                <p>We have already mentioned combos a couple of times. If you reached this page, you may have even seen
+                    some
+                    combo compilations. We all love a combo video but you have to keep
+                    in mind that doing long and meter-draining combos is only situational. To begin learning combos,
+                    focus on learning your Bread and Butter - your BnBs. These are short combos you can reliably
+                    execute. Furthermore, most of these flashy showcase combos are simply extensions of the basic BnBs.
+                </p>
+            </div>
+        </div>
+        <!--Framedata-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Framedata</h3>
+            </div>
+            <div class="image">
+                <iframe alt="framedata video" width="852" height="480" src="https://www.youtube.com/embed/d4pXbhnmIAQ"
+                    title="The Only Frame Data Guide You Need - SFV Season 5" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text long">
+                <p>So far you may have heard moves referred to as "safe" and "unsafe".
+                    This is all a part of framedata - viewing moves as a number of images
+                    that
+                    make up an animation. A safe move ends faster than the enemy can recover from it and an unsafe move
+                    is the opposite. It is unrealistic to learn all the framedata of every move in the
+                    game, take it one step at a time, starting with your main. See the video for a deeper look into
+                    framedata.</p>
+            </div>
+        </div>
+        <!--Footsies-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Footsies</h3>
+            </div>
+            <div class="image">
+                <iframe alt="footsies video"width="852" height="480" src="https://www.youtube.com/embed/YVuMRzISPJo"
+                    title="Fighting Games: Why Learning " Neutral & Footsies" Is Important!" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text long">
+                <p>As referenced in the video for framedata - both spacing and framedata have an equally important
+                    role. It is good to understand how positioning plays a role in a fighting game. If a move
+                    is unsafe on block but its range is larger than the range of any punish, it is still safe.
+                    However if whiffed, it can be punished with an even slower move. The game of trying to get an
+                    advantage in neutral is known as footsies. See the video for a more
+                    in-depth look.</p>
+            </div>
+        </div>
+        <a alt="previous button" class="prev" onclick="previousSlide()">&#10094;</a>
+
+        <a alt="next button"class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <!--[1] Unknown, 'function showSlides(n)', 2019. Такен code.
+    W3Schools
+    URL: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!--Footer element contatining relevant contact information-->
+    <footer>
+        <div>
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <div>
+            <p>Find us here:</p>
+        </div>
+        <ul>
+            <li class="footer_text"> Facebook:</li>
+            <li> <a href="../index.html"><img alt="facebook link" src="../images/logos/facebook.png" height="80"
+                        width="80"></a></li>
+            <li class="footer_text"> Twitter:</li>
+            <li> <a href="../index.html"><img alt="twitter link" src="../images/logos/twitter.png" height="80"
+                        width="80"></a> </li>
+            <li class="footer_text"> Instagram:</li>
+            <li> <a href="../index.html"><img alt="instagram link" src="../images/logos/instagram.png" height="80"
+                        width="80"></a> </li>
+            <li class="footer_text"> Discord:</li>
+            <li> <a href="../index.html"><img alt="discord link" src="../images/logos/discord.png" height="80"
+                        width="80"></a></li>
+            <li class="footer_text"> E-mail:</li>
+            <li> <a href="../index.html"><img alt="e-mail link" src="../images/logos/email.png" height="80"
+                        width="80"></a></li>
+        </ul>
+    </footer>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

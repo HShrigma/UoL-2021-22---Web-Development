@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Contains all information about the page-->
+    <title>SUFGC | Basics</title>
+
+    <!-- contains references to css-->
+    <link rel="stylesheet" href="../style_sheets/styles.css">
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Sofia University Fighting Game Club, official website, Basics">
+    <meta name="keywords"
+        content="SU, SUFGC, Street, Fighter, FGC, Street Fighter, Fighting Games, Fighting Games club">
+    <meta name="author" content="Hristo Stantchev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- header section + navigational bar: Universal to site-->
+    <header>
+        <h1 id="main_header"> SUFGC</h1>
+        <h2 id="mini_header"> Sofia University Fighting Game Club</h2>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a id="active_element" href="basics.html">Basics</a></li>
+            <li><a href="characters.html">Characters</a></li>
+            <li><a href="advanced.html">Advanced</a></li>
+        </ul>
+
+    </nav>
+    <!--Title and Introduction-->
+    <section>
+        <article>
+            <h2 id="page_title">Basics</h2>
+            <p id="page_sub">Here, we will cover the most fundamental parts of Street Fighter 5. However, the knowledge
+                here can be
+                applied to most other fighting games. We will be using VesperArcade's Tutorial series to best show each
+                concept.</p>
+        </article>
+    </section>
+
+    <div>
+        <!--Movement-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Movement</h3>
+            </div>
+            <div class="image">
+                <iframe alt="movement video" width="852" height="480"
+                    src="https://www.youtube.com/embed/skP6BpRkLyE?list=PLIhWuF_5aE1_xHpDsJD1U2OgU4ZuAZrxp"
+                    title="Street Fighter V / 5 Tutorial - Ep.1 Basic Movement" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Moving is one of the most important skills to develop when beginning your fighting game
+                    journey.<br>VesperArcade's video gives us a great insight into how to best use movement to our
+                    advantage.</p>
+            </div>
+
+        </div>
+        <!--Attacks-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Attacks</h3>
+            </div>
+            <div class="image">
+                <iframe alt="attacks video" width="852" height="480"
+                    src="https://www.youtube.com/embed/0s6Iv2cxWY4?list=PLIhWuF_5aE1_xHpDsJD1U2OgU4ZuAZrxp"
+                    title="Street Fighter V / 5 Tutorial - Ep.2 Basic Attacks And Health Bar" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>This next section will cover attacking and its many intricacies.<br>Developing a fundamental
+                    understanding of when and where to employ attacks will further move a player into meaningfully
+                    making
+                    decisions during a game.</p>
+            </div>
+        </div>
+        <!--Blocking-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Blocking</h3>
+            </div>
+            <div class="image">
+                <iframe alt="blocking video" width="852" height="480"
+                    src="https://www.youtube.com/embed/5SJ_rH6fZ6U?list=PLIhWuF_5aE1_xHpDsJD1U2OgU4ZuAZrxp"
+                    title="Street Fighter V / 5 Tutorial - Ep.3 Basic Blocking And Block Damage" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Blocking is the single most effective way to negate damage.<br>While dodging and forcing an opponent
+                    to
+                    miss an attack(known as a "whiff") can lead to getting guaranteed damage in (known as a "whiff
+                    punish"),<br>blocking is a far more reliable tool and makes a huge difference when mastered.</p>
+            </div>
+
+
+        </div>
+        <!--Throws-->
+        <div class="content_block video">
+            <div class="title">
+                <h3>Throws and Recovery</h3>
+            </div>
+            <div class="image">
+                <iframe alt="throws video" width="852" height="480"
+                    src="https://www.youtube.com/embed/OeFhKEoCnYA?list=PLIhWuF_5aE1_xHpDsJD1U2OgU4ZuAZrxp"
+                    title="Street Fighter V / 5 Tutorial - Ep.4 Normal Throws And Quick Recovery" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="text">
+                <p>Throws are a great way to surprise an opponent.<br> This next section covers how to execute and
+                    defend
+                    against throws.<br> It will also cover the best ways to recover once your character hits the ground.
+                </p>
+            </div>
+
+        </div>
+        <a alt="previous button" class="prev" onclick="previousSlide()">&#10094;</a>
+
+        <a alt="next button" class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <!--[1] Unknown, 'function showSlides(n)', 2019. Такен code.
+    W3Schools
+    URL: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <!--Footer element contatining relevant contact information-->
+    <footer>
+        <div>
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <div>
+            <p>Find us here:</p>
+        </div>
+        <ul>
+            <li class="footer_text"> Facebook:</li>
+            <li> <a href="../index.html"><img alt="facebook link" src="../images/logos/facebook.png" height="80"
+                        width="80"></a></li>
+            <li class="footer_text"> Twitter:</li>
+            <li> <a href="../index.html"><img alt="twitter link" src="../images/logos/twitter.png" height="80"
+                        width="80"></a> </li>
+            <li class="footer_text"> Instagram:</li>
+            <li> <a href="../index.html"><img alt="instagram link" src="../images/logos/instagram.png" height="80"
+                        width="80"></a> </li>
+            <li class="footer_text"> Discord:</li>
+            <li> <a href="../index.html"><img alt="discord link" src="../images/logos/discord.png" height="80"
+                        width="80"></a></li>
+            <li class="footer_text"> E-mail:</li>
+            <li> <a href="../index.html"><img alt="e-mail link" src="../images/logos/email.png" height="80"
+                        width="80"></a></li>
+        </ul>
+    </footer>
+    <script src="../javascript/script.js"></script>
+
+</body>
+
+</html>

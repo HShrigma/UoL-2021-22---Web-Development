@@ -1,0 +1,315 @@
+@font-face {
+    font-family: FGFont;
+    src: url(Act_Of_Rejection.ttf);
+}
+
+@font-face {
+    font-family: TitleFont;
+    src: url(RetronoidItalic-ln9V.ttf);
+}
+
+
+#main_header {
+    margin: 20px;
+    color: #f22447;
+    text-align: center;
+    font-family: "TitleFont";
+    font-size: 100px;
+    font-style: italic;
+    letter-spacing: 5px;
+}
+
+#mini_header {
+    margin: 10px;
+    font-family: "FGFont";
+    font-size: 50px;
+    color: #c77987;
+}
+
+#page_title {
+    display: block;
+    font-family: "FGFont";
+    font-size: 35px;
+    background-color: #ea4747;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#page_sub {
+    display: block;
+    background-color: #ea4747;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #f7a3b2;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+}
+
+/*Menu class intended for the horizontal navigational menu*/
+.menu {
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+}
+
+.menu>li {
+    /*remove bullet points and display list elements horizontally*/
+    list-style: none;
+    float: left;
+}
+
+.menu>li>a {
+    font-family: "FGFont";
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: whitesmoke;
+
+    display: block;
+
+    padding: 30px 40px;
+
+    background-color: #f22447;
+    border-style: solid;
+    border-color: white;
+    border: 2px;
+}
+
+.menu>li>a:hover {
+    background-color: rgb(102, 28, 28)
+}
+
+#active_element {
+    background-color: #f7a3b2;
+}
+
+body {
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: Verdana;
+    margin: 0px;
+}
+
+/*Blocks of content that fill the body (including video and text_block)*/
+.content_block {
+    border-style: solid;
+    border-color: #f7a3b2;
+    border-width: 5px;
+    border-radius: 5px;
+    display: none;
+    width: 640px;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.content_block.video {
+    width: 852px;
+    height: 666px;
+}
+
+.content_block>.title {
+    display: block;
+    height: 12%;
+    background-color: #ea4747;
+    color: whitesmoke;
+    font-family: "FGFont";
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.content_block>.title>h3 {
+    margin: 0;
+    position: relative;
+    top: 10px;
+
+}
+
+.content_block>.image {
+    display: block;
+}
+
+.content_block>.text {
+    display: block;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: #ea4747;
+    height: 15.5%;
+    width: 100%;
+
+}
+
+.content_block>.text.long {
+    font-size: 18px;
+}
+
+.content_block>.text>p {
+    margin: 0px;
+}
+
+.text_block {
+    border-style: solid;
+    border-color: #f7a3b2;
+    border-width: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 640px;
+    height: 500px;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.text_block>.title {
+    display: block;
+    height: 12%;
+    background-color: #ea4747;
+    color: whitesmoke;
+    font-family: "FGFont";
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.text_block>.title>h3 {
+    margin: 0;
+    position: relative;
+    top: 10px;
+
+}
+.text_block>.about_text {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    color: whitesmoke;
+    font-size: 20px;
+    background-color: #ea4747;
+    padding: 10px;
+    height: 84%;
+    width: 100% - 20px;
+}
+
+.href_attribute {
+    text-decoration: underline dashed whitesmoke;
+    color: whitesmoke;
+}
+
+.content_block>.about_text>p {
+    margin: 0px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 'Franklin Gothic Medium';
+    font-size: auto;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: "FGFont";
+    font-size: 40px;
+}
+/*footer-specific settings*/
+footer {
+    display: block;
+    margin-top: 70px;
+    background-color: #ea4747;
+    color: whitesmoke;
+}
+
+footer>div>p {
+    font-size: 20px;
+}
+
+footer>ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer>ul>li {
+    list-style: none;
+    display: inline-block;
+    font-family: "FGFont";
+    font-size: 25px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #f7a3b2;
+    border-width: 5px;
+
+}
+
+.footer_text {
+    padding: 0px;
+    background-color: #ea4747;
+    border-style: none;
+    vertical-align: top;
+}
+
+/*[1] Unknown, 'function showSlides(n)', 2019. Borrowed/Inspired code.
+W3Schools
+URL: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+.prev,
+.next {
+    display: inline-block;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #f22447;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #f7a3b2;
+}
+
+.active {
+    display: block;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}

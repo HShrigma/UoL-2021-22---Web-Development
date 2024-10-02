@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- contains title of proj-->
+    <title onload="showSlide(1)">SUFGC | Sofia University Fighting Game Club</title>
+
+    <!-- contains references to css-->
+    <link rel="stylesheet" href="style_sheets/styles.css">
+
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Sofia University Fighting Game Club, official website">
+    <meta name="keywords"
+        content="SU, SUFGC, Street, Fighter, FGC, Street Fighter, Fighting Games, Fighting Games club">
+    <meta name="author" content="Hristo Stantchev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<body>
+    <!-- header section + navigational bar: Universal to site-->
+    <header>
+        <h1 id="main_header"> SUFGC</h1>
+        <h2 id="mini_header"> Sofia University Fighting Game Club</h2>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a id="active_element" href="index.html">Home</a></li>
+            <li><a href="HTML/about.html">About</a></li>
+            <li><a href="HTML/basics.html">Basics</a></li>
+            <li><a href="HTML/characters.html">Characters</a></li>
+            <li><a href="HTML/advanced.html">Advanced</a></li>
+        </ul>
+
+    </nav>
+
+    <!--Short description of website-->
+    <section>
+        <article>
+            <h2 id="page_title">Where to Start</h2>
+
+            <p id="page_sub">This is the Sofia University Fighting Game Club's official website.
+                <br>
+                Our goal is to get more people interested in this hobby by providing
+                some helpful tips for beginners.
+                <br>
+                If you are interested, contact information is available for applicants
+                at the bottom of each page.
+            </p>
+
+        </article>
+
+    </section>
+
+    <div>
+        <!-- Image Carousel ADD ASAP-->
+        <div class="content_block">
+            <!-- About Advertisement-->
+            <div class="title">
+                <h3>About</h3>
+            </div>
+            <div class="image">
+                <a href="HTML/about.html"><img alt="about section" src="images/image_carousels/index/0.png" width="640"
+                        height="360"></a>
+            </div>
+            <div class="text">
+                <p>Why fighting games? Who are we?
+                    <br>
+                    All the answers for your questions and more you will find here!
+                </p>
+            </div>
+        </div>
+        <div class="content_block">
+            <!-- Basics Advertisement-->
+            <div class="title">
+                <h3>Basics</h3>
+            </div>
+            <div class="image">
+                <a href="HTML/basics.html"><img alt="basics section" src="images/image_carousels/index/1.png"
+                        width="640" height="360"></a>
+            </div>
+            <div class="text">
+                <p>A great place to start if this is your first time playing fighting games!</p>
+            </div>
+        </div>
+        <div class="content_block">
+            <!-- Characters Advertisement-->
+            <div class="title">
+                <h3>Characters</h3>
+            </div>
+            <div class="image">
+                <a href="HTML/characters.html"><img alt="characters section" src="images/image_carousels/index/2.png"
+                        width="640" height="360"></a>
+            </div>
+            <div class="text">
+                <p>Need to pick a character? <br>Don't know where to start? <br>You can start here!</p>
+            </div>
+        </div>
+        <div class="content_block">
+            <!-- Advanced Advertisement-->
+            <div class="title">
+                <h3>Advanced</h3>
+            </div>
+            <div class="image">
+                <a href="HTML/advanced.html"><img alt="advanced section" src="images/image_carousels/index/3.png"
+                        width="640" height="360"></a>
+            </div>
+            <div class="text">
+                <p>Already familiar with the basics and picked a main?<br>
+                    Need that extra knowledge to get competitive?<br>
+                    Start here!</p>
+            </div>
+        </div>
+        <a alt="previous button" class="prev" onclick="previousSlide()">&#10094;</a>
+
+        <a alt="next button" class="next" onclick="nextSlide()">&#10095;</a>
+    </div>
+    <!-- The dots/circles -->
+    <!--[1] Unknown, 'function showSlides(n)', 2019. Такен code.
+    W3Schools
+    URL: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <!--Footer element contatining relevant contact information-->
+    <footer>
+        <div>
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <div>
+            <p>Find us here:</p>
+        </div>
+        <ul>
+            <li class="footer_text"> Facebook:</li>
+            <li> <a href="index.html"><img alt="facebook link" src="images/logos/facebook.png" height="80"
+                        width="80"></a></li>
+            <li class="footer_text"> Twitter:</li>
+            <li> <a href="index.html"><img alt="twitter link" src="images/logos/twitter.png" height="80" width="80"></a>
+            </li>
+            <li class="footer_text"> Instagram:</li>
+            <li> <a href="index.html"><img alt="instagram link" src="images/logos/instagram.png" height="80"
+                        width="80"></a> </li>
+            <li class="footer_text"> Discord:</li>
+            <li> <a href="index.html"><img alt="discord link" src="images/logos/discord.png" height="80" width="80"></a>
+            </li>
+            <li class="footer_text"> E-mail:</li>
+            <li> <a href="index.html"><img alt="e-mail link" src="images/logos/email.png" height="80" width="80"></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
